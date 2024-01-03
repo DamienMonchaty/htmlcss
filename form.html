@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title> 
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <form action="mailto:john.doe@oracle.fr" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" name="nom" id="nom" placeholder="Entrez un nom !">
+        <input type="submit" value="Envoyer">
+    </form>
+    <hr>
+    <form action="" method="post">
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" placeholder="Entrez un nom !"></br>
+        <label for="prenom">Prénom :</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Entrez un prénom !"></br>
+        Etes-vous client de la fnac ?
+        OUI <input type="radio" name="client" value="oui" checked>
+        NON <input type="radio" name="client" value="non"><br>
+        <input type="submit" value="Envoyer">
+        <input type="reset" value="Annuler">
+    </form>
+    <hr>
+    <form action="mailto:john.doe@oracle.fr" method="post">
+        <table>
+            <tr>
+                <td><label for="nom">Entrez votre nom :</label></td>
+                <td><input type="text" id="nom" name="nom" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Entrez votre email :</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>
+                    <select name="nom">
+                        <option>--Veuillez faire une selection--</option>
+                        <option>Lundi</option>
+                        <option>Mardi</option>
+                        <option>Mercredi</option>
+                        <option>Jeudi</option>
+                        <option>Vendredi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="client">Etes-vous client de la fnac ? :</label></td>
+                <td>OUI <input type="radio" id="client" name="client" value="oui" checked>
+                    NON <input type="radio" id="client" name="client" value="non"></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Envoyer"></td>
+                <td><input type="reset" value="Annuler"></td>
+            </tr>
+        </table>
+    </form>
+    <button>Envoyer</button>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body style="background-color:chartreuse;color:bisque;">
+    <!-- Barre de navigation -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="form.html">Forms</a>
+        <a href="tableau.html">Tableaux</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <!-- Contenu de la page -->
+    <div>
+        <!-- Lien dans la même page -->
+        <a href="#signet" title="Redirection Signet">Signet</a></br>
+        <!-- Lien vers un document local  -->
+        <a href="contact.html">Contact</a></br>
+        <!-- Lien vers une partie d'un document local -->
+        <a href="contact.html#signet" target="_blank">Contact Signet</a></br>
+        Bonjour
+        </br>
+        Salut
+        </br>
+        <b>
+            <i>hello world !</i>
+        </b>
+        <div>
+            <p class="info">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias, animi cum veniam vero suscipit tempore quo quaerat deleniti. Nisi tempora officia sunt consequuntur, voluptas corrupti facere explicabo magnam necessitatibus cumque.</p>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam blanditiis, deserunt voluptates error harum ex voluptatum modi nostrum? Saepe laudantium delectus veniam accusantium quos et, consequuntur vel voluptates a?</p>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda quidem, vero ut eligendi facere, rerum voluptate reiciendis quia officiis quam fugiat sed laborum nemo officia explicabo, perspiciatis exercitationem veniam.</p>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas quam blanditiis, deserunt voluptates error harum ex voluptatum modi nostrum? Saepe laudantium delectus veniam accusantium quos et, consequuntur vel voluptates a?</p>
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit assumenda quidem, vero ut eligendi facere, rerum voluptate reiciendis quia officiis quam fugiat sed laborum nemo officia explicabo, perspiciatis exercitationem veniam.</p>
+        </div>
+        <h1>Titre de niveau 1</h1>
+        <h6>Titre de niveau 6</h6>
+        <div class="multi-col">
+            <img src="assets/images/bronson.jpg" alt="bronson">
+            <img src="assets/images/bronson.jpg" alt="bronson">
+            <img src="assets/images/bronson.jpg" alt="bronson">
+        </div>
+        <!-- Trigger/Open The Modal -->
+        <button id="myBtn">Open Modal</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>Some text in the Modal..</p>
+            </div>
+        </div>
+
+        <a name="signet">
+            Je suis le signet de la page index
+        </a>
+
+        <a href="https://pixabay.com" target="_blank">
+            <img src="assets/images/fireworks.jpg" alt="feu d'artifice" title="feu d'artifice">
+        </a>
+
+        <!-- Listes -->
+        <!-- Liste à puce / liste non ordonnée -->
+        <ul>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </ul>
+        <!-- liste ordonnée -->
+        <ol>
+            <li>Element 1</li>
+            <li>Element 2</li>
+            <li>Element 3</li>
+        </ol>
+    </div>
+    <!-- Pied de page -->
+    <footer>
+        &copy; 2024 Viva HTML5
+    </footer>
+    <script>
+        var modal = document.getElementById("myModal");
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    </script>
+</body>
+</html>
